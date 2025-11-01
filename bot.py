@@ -1,4 +1,5 @@
 import asyncio
+import os
 import json
 import re
 from pathlib import Path
@@ -7,7 +8,7 @@ from aiogram.filters import Command, CommandStart
 from aiogram.enums import ParseMode
 
 # ---------------- НАСТРОЙКИ ----------------
-TOKEN = "8548367035:AAETkfj273stpLyT9zVGX9JH9VX4uACq1kQ"
+TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID = 8394886116
 DATA_FILE = Path("data.json")
 # -------------------------------------------
